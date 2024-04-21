@@ -11,6 +11,10 @@ void save (ofstream& data_in, vector<unsigned int> &ram_v)
             data_in << ram_v[i];
         }
     }
+    else
+    {
+        cerr << "Error! data.txt is not found!";
+    }
 
     data_in.close();
 }
@@ -25,6 +29,10 @@ void load(ifstream& data_out, vector<unsigned int> &ram_v)
         {
             data_out >> ram_v[i];
         }
+    }
+    else
+    {
+        cerr << "Error! data.txt is not found!";
     }
 
     data_out.close();

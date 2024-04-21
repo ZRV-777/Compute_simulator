@@ -46,6 +46,10 @@ int main()
         {
             output_ram(ram_v);
         }
+        else if (command == "exit")
+        {
+            cout << "Goodbye, " << user << "!" << endl;
+        }
         else
         {
             cerr << "\n" << "Unknown command" << endl;
